@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+
+   
+<div class="container">
+
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="amberr.jpg" width="125px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="amber home.html" target="_blank">Home</a></li>
+                <li><a href="amber products.html" target="_blank">Product</a></li>
+                <li><a href="amber detail.html" target="_blank">About</a></li>
+                <li><a href="amber account.html" target="_blank">Account</a></li>
+                <li><a href="amber cart.html" target="_blank">Cart</a></li>
+            </ul>
+        </nav>
+        <img src="cart.jpg" width="30px 30px" alt="">
+    </div>
+
+   <!-- account-page -->
+   <div class="account-page">
+       <div class="container">
+           <div class="row">
+               <div class="col-2">
+                   <img src="bg.jpg" width="100%">
+               </div>
+
+               <div class="col-2">
+                   <div class="form-container">
+                       <div class="form-btn">
+                           <span onclick="login()">Login</span>
+                           <span onclick="register()">Register</span>
+                           <hr id="indicator">
+                       </div>
+
+                       <form id="LoginForm">
+                           <input type="text" placeholder="Username">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Login</button>
+                           <a href="">Forgot Password</a>
+                       </form>
+
+                       <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                        
+                    </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+  
+
+
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="gp.jpg" alt="">
+                    <img src="gp1.jpg" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="amberr.jpg" alt="">
+                <p>Our purpose is to sustainably make the pleasure and benefits of sports accesible to many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="Copyright"> Copyright</p>
+    </div>
+</div>
+
+<!-- js for toggle form -->
+<script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var indicator = document.getElementById("indicator")
+
+    function register(){
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform ="translateX(0px)";
+        indicator.style.transform ="translateX(0px)";
+    }
+
+    function login(){
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform ="translateX(0px)";
+        indicator.style.transform ="translateX(0px)";
+    }
+</script>
+
+
+</body>
+</html>
